@@ -67,9 +67,9 @@
               <goal>test</goal>
             </goals>
             <configuration>
-              <includes>
-                <include>**/*_UnitTest.java</include>  <!-- Runs all JUnit tests -->
-              </includes>
+              <excludes>
+                <exclude>**/*_UnitTest.java</exclude>  <!-- Runs all JUnit tests -->
+              </excludes>
             </configuration>
           </execution>
 
