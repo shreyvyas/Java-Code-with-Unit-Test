@@ -11,7 +11,7 @@ public class Palindrome_UnitTest {
 	
 	IsPalindrome palindrome = new IsPalindrome();
 	
-	@ParameterizedTest(name = "Test Case {index}: Input = {0}")
+	@ParameterizedTest
 	@CsvSource({
 		
 		"'madam', true",
