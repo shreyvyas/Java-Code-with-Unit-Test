@@ -1,9 +1,12 @@
 testJavaPrograms\BasicTest.class
 utilities\TestListener.class
 utilities\ExtentReports.class
+seleniumTests\Test002.class
 testJavaPrograms\Palindrome_UnitTest.class
+testJSONData\CompareJSON.class
 testJavaPrograms\Palindrome_TestNG_Test.class
 utilities\CommonMethods.class
 utilities\ConfigReader.class
+utilities\Constants.class
 utilities\BaseTest.class
 seleniumTests\Test001.class
