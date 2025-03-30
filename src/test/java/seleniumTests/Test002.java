@@ -44,5 +44,20 @@ public class Test002 {
 		}
 
 	}
+	
+	@Test(description="jsonpath")
+	public void usinJsonPath() {
+		
+		try {
+			String result = CompareJSON.valueJsonPath();
+			System.out.println(result);
+			String expected = "New";
+			Assert.assertEquals(result, expected);
+		}
+		catch(Exception e) {
+			System.out.println(e.getMessage());
+		}
+		
+	}
 
 }

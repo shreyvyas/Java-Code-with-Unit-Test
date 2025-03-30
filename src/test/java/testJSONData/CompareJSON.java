@@ -2,21 +2,24 @@ package testJSONData;
 
 import java.io.File;
 import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.List;
 
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
+import io.restassured.path.json.JsonPath;
 import utilities.Constants;
 
 public class CompareJSON {
 	
 	public static boolean readCounters() throws IOException {
 		
-		ObjectMapper objectMapper = new ObjectMapper();
+		ObjectMapper objectMapper = new ObjectMapper();    //read, write and convert JsonData
 		
-		JsonNode jsonnode1 = objectMapper.readTree(new File(Constants.counterfilepath1));
+		JsonNode jsonnode1 = objectMapper.readTree(new File(Constants.counterfilepath1));   //Json Tree Structure
 		JsonNode jsonnode2 = objectMapper.readTree(new File(Constants.counterfilepath2));
 		
 		int value1 = jsonnode1.get("counters").asInt();
@@ -47,9 +50,19 @@ public class CompareJSON {
 			}
 			
 		}
-		return values;
+		return values;	
 		
+	}
+	
+	public static String valueJsonPath() throws IOException {
 		
+		String jsonData = new String(Files.readAllBytes(Paths.get(Constants.testdata)));
+		
+		JsonPath js = new JsonPath(jsonData);
+		
+		String value = js.get("menu.popup.menuitem[0].value");
+		
+		return value;
 		
 	}
 

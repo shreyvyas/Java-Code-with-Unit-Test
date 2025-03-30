@@ -10,6 +10,8 @@ public class Constants {
 	
 	public static String testdata1 = "C:\\Users\\admin\\eclipse-workspace\\PreparationAgain\\Resources\\TestData1.json";
 	
+	public static String testdata2 = "C:\\Users\\admin\\eclipse-workspace\\PreparationAgain\\Resources\\TestData2.json";
+	
 	
 
 }

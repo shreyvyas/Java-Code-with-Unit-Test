@@ -16,9 +16,9 @@ public class IterateJsonObjects {
 	
 	public static void main(String[] args) throws IOException {
 		
-		//iterateJson1();
+		iterateJson1();
 		
-		//iterateJson2();
+		iterateJson2();
 		
 		iterateJson3(); 
 	}

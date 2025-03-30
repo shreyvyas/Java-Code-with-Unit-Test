@@ -1,0 +1,60 @@
+{
+  "company": {
+    "name": "TechCorp",
+    "location": {
+      "country": "USA",
+      "state": "California",
+      "city": "San Francisco"
+    },
+    "departments": [
+      {
+        "name": "Engineering",
+        "employees": [
+          {
+            "id": 101,
+            "name": "Alice",
+            "role": "Software Engineer",
+            "skills": ["Java", "Python", "AWS"],
+            "projects": [
+              {
+                "name": "Project Alpha",
+                "status": "Completed",
+                "budget": 100000
+              },
+              {
+                "name": "Project Beta",
+                "status": "Ongoing",
+                "budget": 200000
+              }
+            ]
+          },
+          {
+            "id": 102,
+            "name": "Bob",
+            "role": "DevOps Engineer",
+            "skills": ["Docker", "Kubernetes", "Terraform"],
+            "projects": [
+              {
+                "name": "Project Gamma",
+                "status": "Ongoing",
+                "budget": 150000
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "HR",
+        "employees": [
+          {
+            "id": 201,
+            "name": "Charlie",
+            "role": "HR Manager",
+            "skills": ["Recruitment", "Employee Relations"],
+            "projects": []
+          }
+        ]
+      }
+    ]
+  }
+}

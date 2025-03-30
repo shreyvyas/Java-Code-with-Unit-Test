@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="seleniumTests.Test002">
+      <class name="testJSONData.TestJSONData">
         <methods>
-          <include name="readValue"/>
+          <include name="getBudget"/>
         </methods>
-      </class> <!-- seleniumTests.Test002 -->
+      </class> <!-- testJSONData.TestJSONData -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
